@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+      {% for name in names %}
+        {% if name == 'fifi'%}
+          <h3>{{name}}</h3>
+        {% else %}
+          <h1>{{name}}</h1>
+        {% endif %}
+      {% endfor %}
+      <a href="/login">Login</a>
+ {% endblock %}
